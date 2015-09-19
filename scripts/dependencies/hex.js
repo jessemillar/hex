@@ -11,6 +11,12 @@ var generateHex = function() {
 };
 
 var hexToDecimal = function(hex) {
+    if (hex[1] == "x") { // Remove "0x" if it's there
+        hex = hex.slice(2);
+    }
+
+    hex = hex.toUpperCase(); // Capitalize the string
+
     var power = 0;
     var decimal = 0;
 

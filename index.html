@@ -4,13 +4,20 @@
 <head>
     <title>Hex!</title>
     <meta name="description" content="Practice hexadecimal to decimal (and back) conversion!" />
+    <script type="text/javascript" language="javascript" src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
     <script type="text/javascript" language="javascript" src="scripts/dependencies/hex.js"></script>
     <script type="text/javascript" language="javascript" src="scripts/main.js"></script>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link href='https://fonts.googleapis.com/css?family=Inconsolata' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="style/main.css">
 </head>
 
 <body>
+    <form id="form">
+        <input id="hex" type="text">
+        <div id="progress"></div>
+        <input id="decimal" type="text">
+        <input id="check" type="submit" value="CHECK">
+    </form>
 </body>
 
 </html>
